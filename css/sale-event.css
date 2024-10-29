@@ -1,0 +1,120 @@
+/*
+CCS for SaleEvent coupons plugin
+*/
+
+
+/*archive*/
+
+.coupon-content {
+    display: flex;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 33px -11px rgba(0, 0, 0, 0.75);
+}
+.coupon-details {
+    width: 45%;
+    background: url(../img/item-dots.png) right -5px repeat-y;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.coupon-title {
+    padding: 0;
+    font-size: 70%;
+}
+.coupon-details span {
+    font-size: 50%;
+    color: #a8a8a8;
+}
+.coupon-details p {
+    font-size: 60%;
+}
+.coupon-thumbnail {
+    width: 30%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 3px;
+}
+.coupon-dates {
+    width: 25%;
+    text-align: center;
+    font-size: 60%;
+    padding: 0 5px;
+}
+.coupon-dates, .coupon-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.expired {
+    background-color: #f3f3f3;
+}
+.expired, .notStarted {
+    filter: grayscale(100%);
+}
+.button-coupon {
+    background-color: #d81159;
+    color: #fff;
+    border-radius: 70px;
+    padding: 8px 8px;
+}
+.active-coupons, .past-coupons, .future-coupons {
+    margin-bottom: 50px;
+}
+
+a.coupons-archive{
+  max-width:300px;
+  display: block;
+  margin: 30px auto;
+}
+
+.prev-coupon a, .next-coupon a{
+  padding:5px 10px !important;
+  color:#d81159 !important;
+  border: 1px solid #d81159;
+}
+
+.pagination li.prev-coupon:hover a, .pagination li.next-coupon:hover a{
+  background: #d81159 !important;
+  color:#ffffff !important;
+}
+
+.next-coupon{
+  float: right !important;
+}
+
+@media(min-width:640px) {
+    .coupon-content {
+        margin-bottom: 10px;
+    }
+    .coupon-image {
+        max-width: 140px;
+        max-height: 90px;
+    }
+    .coupon-details {
+        width: 58.35%;
+        padding: 14px 91px 14px 29px;
+    }
+    .coupon-details span {
+        font-size: 70%;
+    }
+    .coupon-details p, .coupon-title {
+        font-size: 100%;
+    }
+    .coiupon-details p{
+      font-size: 80%;
+    }
+    .coupon-details h5 {
+        margin-bottom: 10px;
+    }
+    .coupon-thumbnail {
+        width: 18.1%;
+        padding: 20px 10px;
+    }
+    .coupon-dates {
+        width: 23.55%;
+        font-size: 100%;
+    }
+    .button-coupon {
+        padding: 12px 30px;
+    }
+}
